@@ -76,8 +76,9 @@ $roles = mysqli_query($con, $query) or die(mysqli_error($con));
                             <td><?php echo $persona['nombre_completo']; ?></td>
                             <td><?php echo $persona['rol']; ?></td>
                             <td><?php echo $persona['estado'] ? 'ACTIVO' : 'INACTIVO'; ?></td>
-                            <td><a href="libros/editar.php?id=<?php echo $persona['id']; ?>" >Editar</a></td>
-                            <td><a href="libros/eliminar.php?id=<?php echo $persona['id']; ?>" value="">Eliminar</a></td>
+                            
+                            <td><a href="editar.php?id=<?php echo $persona['id']; ?>" >Editar</a></td>
+                            <td><a href="eliminar.php?id=<?php echo $persona['id']; ?>" value="">Eliminar</a></td>
                         </tr>
                     <?php $pos++;
                     }
