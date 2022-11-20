@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ddd;
+}
+input {
+  display: block;
+  padding: 5px;
+  background-color: #246355;
+  border-radius: 5px;
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  margin-top: 8px;
+}
+::placeholder {
+  color: #fff;
+}
+button {
+  background-color: rgb(12, 45, 78);
+  color: #fff;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+.boton button {
+  background-color: rgb(12, 45, 78);
+  color: #fff;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+table {
+  background-color: #fff;
+  text-align: left;
+  border-collapse: collapse;
+  width: 80%;
+}
+th,
+td {
+  padding: 20px;
+}
+
+thead {
+  background-color: #246355;
+  border-bottom: solid 5px #0f362d;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+a {
+  display: block;
+  padding: 5px;
+  background-color: rgb(12, 45, 78);
+  border-radius: 3px;
+  color: #000;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.link a {
+  display: block;
+  padding: 15px;
+  background-color: rgb(12, 45, 78);
+  border-radius: 3px;
+  color: #000;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 25px;
+}
+.classs a {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 15px;
+  max-width: 70px;
+}
+
+label {
+  color: #fff;
+  font-size: 25px;
+}
+
+.contenedor {
+  background-color: #000;
+  max-width: 500px;
+  height: 580px;
+  margin-left: 20px;
+  border-radius: 60px;
+  margin-top: 15px;
+}
+
+.contenedor select {
+  display: block;
+  padding-top: 15px;
+  padding-left: 105px;
+  width: 300px;
+  background-color: #0f362d;
+}
+#titulo {
+  font-size: 20px;
+}
+#id_autor {
+  padding-left: 5px;
+  font-size: 22px;
+  color: #fff;
+}
+#disponible {
+  font-size: 20px;
+  color: #fff;
+  padding-left: 5px;
+}
+
+.contenedor form {
+  padding-top: 35px;
+  padding-left: 98px;
+}
+
+.contenedor h3 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 35px;
+  text-shadow: 5px 5px 5px rgb(255, 0, 94);
+}
+
+option {
+  margin-top: 10px;
+}
+
+.tabla {
+  width: 950px;
+  margin-top: -590px;
+  margin-left: 670px;
+}
+.tabla h3 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(255, 0, 94);
+  margin-left: -175px;
+  margin-top: -370px;
+}
+.tabla table {
+  margin-top: 20px;
+}
+#estado {
+  display: block;
+  padding: 5px;
+  background-color: #246355;
+  border-radius: 5px;
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  margin-top: 8px;
+}
+
+.contenedor2 {
+  background-color: #000;
+  max-width: 500px;
+  height: 780px;
+  margin-left: 20px;
+  border-radius: 60px;
+  margin-top: 15px;
+}
+
+.contenedor2 select {
+  display: block;
+  padding-top: 15px;
+  padding-left: 105px;
+  width: 300px;
+  background-color: #0f362d;
+}
+#id_rol {
+  padding-left: 5px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.contenedor2 form {
+  padding-top: 15px;
+  padding-left: 98px;
+}
+
+.contenedor2 h3 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding-top: 35px;
+  text-shadow: 5px 5px 5px rgb(255, 0, 94);
+}
+
+.guardar {
+  display: block;
+  padding: 5px;
+  background-color: rgb(12, 45, 78);
+  border-radius: 3px;
+  color: #000;
+  text-decoration: none;
+  color: #ddd;
+}
+
+#tab h4 {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(255, 0, 94);
+  margin-left: 35%;
+  margin-top: -790px;
+}
+
+#tab table {
+  float: right;
+  max-width:max-content;
+  margin-right: 187px;
+}
