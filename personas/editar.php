@@ -30,10 +30,10 @@ $libro  = mysqli_fetch_assoc($result);
             <div>
                 <h3>Ingrese los datos actualizados del libro...</h3>
                 <form action="guardar.php" method="post" autocomplete="off">
-                    <input type="hidden" name="id" value="<?= $libro['id']; ?>">
+                    <input type="hidden" name="id" value="<?= $persona['id']; ?>">
                     <div class="mb-3">
                         <label for="titulo" >Título</label>
-                        <input type="text"  id="titulo" name="titulo" value="<?= $libro['titulo']; ?>" required>
+                        <input type="text"  id="titulo" name="titulo" value="<?= $persona['titulo']; ?>" required>
                     </div>
                     <div class="mb-3">
                         <label for="autor" >Autor</label>
@@ -46,8 +46,8 @@ $libro  = mysqli_fetch_assoc($result);
                     <div >
                         <label >¿Se encuentra disponible?</label>
                         <select class="form-select" id="disponible" name="disponible" aria-label="Selector de estado del libro" required>
-                            <option value="1" <?= $libro['disponible'] == 1 ? 'selected' : ''; ?>>Si</option>
-                            <option value="0" <?= $libro['disponible'] == 0 ? 'selected' : ''; ?>>No</option>
+                            <option value="1" <?= $persona['disponible'] == 1 ? 'selected' : ''; ?>>Si</option>
+                            <option value="0" <?= $persona['disponible'] == 0 ? 'selected' : ''; ?>>No</option>
                         </select>
                     </div>
                     <input  type="submit" value="Guardar">
