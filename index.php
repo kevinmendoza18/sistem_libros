@@ -1,10 +1,9 @@
 <?php
 include_once('conexion.php');
-
-$query = "SELECT id, CONCAT(IFNULL(primer_nombre,''),' ',IFNULL(segundo_nombre,''),' ',IFNULL(primer_apellido,''),' ',IFNULL(segundo_apellido,'')) AS autor FROM personas  WHERE estado = 1";
+$query = "SELECT id, CONCAT(IFNULL(primer_nombre,''),' ',IFNULL(segundo_nombre,''),' ',IFNULL(primer_apellido,''),' ',IFNULL(segundo_apellido,'')) AS autor FROM personas WHERE estado = 1";
 $autores = mysqli_query($con, $query) or die(mysqli_error($con));
 
-$query = "SELECT l.id AS id, titulo, CONCAT(IFNULL(primer_nombre,''),' ',IFNULL(segundo_nombre,''),' ',IFNULL(primer_apellido,''),' ',IFNULL(segundo_apellido,'')) AS autor, l.disponible FROM libros AS l JOIN personas AS p ON l.id_autor = p.id WHERE l.estado = 1";
+$query = "SELECT l.id AS id, titulo, CONCAT(IFNULL(primer_nombre,''),' ',IFNULL(segundo_nombre,''),' ',IFNULL(primer_apellido,''),' ',IFNULL(segundo_apellido,'')) AS autor, l.disponible FROM libros AS l JOIN personas";
 $libros = mysqli_query($con, $query) or die(mysqli_error($con));
 ?>
 <!DOCTYPE html>

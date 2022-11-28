@@ -29,7 +29,7 @@ $libro  = mysqli_fetch_assoc($result);
         <div>
             <div>
                 <h3>Ingrese los datos actualizados del libro...</h3>
-                <form action="guardar.php" method="post" autocomplete="off">
+                <form action="recibir.php" method="post" autocomplete="off">
                     <input type="hidden" name="id" value="<?= $libro['id']; ?>">
                     <div class="mb-3">
                         <label for="titulo" >Título</label>

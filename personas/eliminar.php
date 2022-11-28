@@ -25,7 +25,7 @@ $result = mysqli_query($con, $query) or die(mysqli_error($con));
             <p>Registro no Eliminado</p>
         <?php } ?>
 
-        <a href="../index.php">REGRESAR</a>
+        <a href="./index.php">REGRESAR</a>
     
 </body>
 </html>
