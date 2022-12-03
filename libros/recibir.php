@@ -7,7 +7,7 @@ $id_autor   = $_POST['id_autor'];
 $disponible = $_POST['disponible'];
 
 if (!isset($_POST['id'])) {
-    $query = "INSERT INTO libros(titulo, id_autor, disponible) VALUES('$titulo', '$id_autor', '$disponible')";
+    $query = "INSERT INTO libros(titulo, id_autor, disponible) VALUES('$titulo', $id_autor, $disponible)";
 } else {
     $query = "UPDATE libros SET titulo = '$titulo', id_autor = '$id_autor', disponible = {$disponible} WHERE id = {$_POST['id']}";
 }

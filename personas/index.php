@@ -23,7 +23,7 @@ $roles = mysqli_query($con, $query) or die(mysqli_error($con));
         <a href="../index.php">Inicio</a>
     </div>
     <div class="contenedor2">
-        <form action="recibir.php" method="post" autocomplete="off">
+        <form action="guardar.php" method="post" autocomplete="off">
             <label for="primer_nombre">Primer nombre</label>
             <input type="text" id="primer_nombre" name="primer_nombre" required>
             <br><br>

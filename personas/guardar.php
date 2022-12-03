@@ -16,5 +16,5 @@ if (!isset($_POST['id'])) {
 
 $result = mysqli_query($con, $query) or die(mysqli_error($con));
 
-header("Location: /index.php");
+header("Location: ./index.php");
 ?>
