@@ -9,7 +9,6 @@ JOIN personas AS p ON l.id_autor = p.id
 WHERE l.estado = 1";
 $libros = mysqli_query($con, $query) or die(mysqli_error($con));
 
-var_dump($libros);
 
 ?>
 <!DOCTYPE html>
@@ -45,7 +44,7 @@ var_dump($libros);
             <select name="disponible" id="disponible" required>
                 <option selected>Seleccione una Opcion...</option>
                 <option value="1">disponible</option>
-                <option value="2">no disponible</option>
+                <option value="0">no disponible</option>
             </select>
             <br><br>
             <button type="submit">enviar</button>

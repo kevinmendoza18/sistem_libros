@@ -26,32 +26,32 @@ $libro  = mysqli_fetch_assoc($result);
 
 <body>
     <div class="container">
-        <div>
-            <div>
+        <div class="row">
+            <div class="col">
                 <h3>Ingrese los datos actualizados del libro...</h3>
                 <form action="recibir.php" method="post" autocomplete="off">
                     <input type="hidden" name="id" value="<?= $libro['id']; ?>">
                     <div class="mb-3">
-                        <label for="titulo" >Título</label>
-                        <input type="text"  id="titulo" name="titulo" value="<?= $libro['titulo']; ?>" required>
+                        <label for="titulo" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="titulo" name="titulo" value="<?= $libro['titulo']; ?>" required>
                     </div>
                     <div class="mb-3">
-                        <label for="autor" >Autor</label>
-                        <select id="id_autor" name="id_autor"  required>
+                        <label for="autor" class="form-label">Autor</label>
+                        <select class="form-select" id="id_autor" name="id_autor" aria-label="selector de autores" required>
                             <?php foreach ($autores as $autor) : ?>
                                 <option value="<?= $autor['id'] ?>" <?= $autor['id'] == $libro['id_autor'] ? 'selected' : '' ?>><?= $autor['autor'] ?></option>";
                             <?php endforeach ?>
                         </select>
                     </div>
-                    <div >
-                        <label >¿Se encuentra disponible?</label>
+                    <div class="mb-3">
+                        <label for="disponible" class="form-label">¿Se encuentra disponible?</label>
                         <select class="form-select" id="disponible" name="disponible" aria-label="Selector de estado del libro" required>
                             <option value="1" <?= $libro['disponible'] == 1 ? 'selected' : ''; ?>>Si</option>
                             <option value="0" <?= $libro['disponible'] == 0 ? 'selected' : ''; ?>>No</option>
                         </select>
                     </div>
-                    <input  type="submit" value="Guardar">
-                    <a href="../index.php">Regresar</a>
+                    <input class="btn btn-sm btn-outline-primary" type="submit" value="Guardar">
+                    <a class="btn btn-sm btn-outline-success" href="../index.php">Regresar</a>
                 </form>
             </div>
         </div>
